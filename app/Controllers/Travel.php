@@ -23,6 +23,7 @@ class Travel extends BaseController
      $model = new \App\Models\Places();
      $headings = $model->fields;
      $data = $model->findAll();
+        
      
      $table = new \CodeIgniter\View\Table();
      unset($headings[count($headings)-1]);
